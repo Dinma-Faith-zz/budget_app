@@ -1,0 +1,2 @@
+class GroupRecord < ApplicationRecord
+end
