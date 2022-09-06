@@ -1,4 +1,4 @@
-<%= form_with(model: record) do |form| %>
+<%= form_with model: @record, url: user_records_path, method: :post do |form| %>
   <% if record.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(record.errors.count, "error") %> prohibited this record from being saved:</h2>
@@ -10,10 +10,9 @@
       </ul>
     </div>
   <% end %>
-
   <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.number_field :user_id %>
+    <% form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id, id: :group_user_id, value: current_user.id, type: :hidden %>
   </div>
 
   <div>
@@ -25,6 +24,8 @@
     <%= form.label :amount, style: "display: block" %>
     <%= form.text_field :amount %>
   </div>
+
+  <%= form.select :group_id, @groups&.map{ |group| [group.name, group.id] }, { :prompt => 'Select Group'}, class:"form-control mb-3" %> 
 
   <div>
     <%= form.submit %>

@@ -1,14 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Groups</h1>
+<h1>Group List</h1>
+  <% if @groups.empty? %>
+    <p>No group added yet!</p>
+  <% end %>
 
 <div id="groups">
-  <% @groups.each do |group| %>
+  <% current_user.groups.each do |group| %>
     <%= render group %>
     <p>
-      <%= link_to "Show this group", group %>
-    </p>
-  <% end %>
+      <%= link_to "Show this group", user_group_path(current_user, group) %>
+      </p>
+      <% end %>
+      <%= link_to "New group", new_user_group_path(current_user, @groups) %>
 </div>
 
-<%= link_to "New group", new_group_path %>

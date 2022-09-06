@@ -3,7 +3,7 @@ class RecordsController < ApplicationController
 
   # GET /records or /records.json
   def index
-    @records = Record.all
+    @records = Record.includes(:user).where(user: current_user).order(created_at: :desc)
   end
 
   # GET /records/1 or /records/1.json
@@ -12,6 +12,7 @@ class RecordsController < ApplicationController
   # GET /records/new
   def new
     @record = Record.new
+    @groups = current_user.groups.where(user_id: current_user.id).order(:name) 
   end
 
   # GET /records/1/edit
@@ -19,11 +20,15 @@ class RecordsController < ApplicationController
 
   # POST /records or /records.json
   def create
-    @record = Record.new(record_params)
+    params = record_params
+    @record = Record.new(user: current_user, name: params[:name], amount: params[:amount]) 
+    # @record = Record.new(record_params)
 
     respond_to do |format|
       if @record.save
-        format.html { redirect_to record_url(@record), notice: 'Record was successfully created.' }
+        @group = Group.find(params[:group_id])
+        @record.groups << @group
+        format.html { redirect_to user_records_url(current_user, @record), notice: 'Record was successfully created.' }
         format.json { render :show, status: :created, location: @record }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -64,6 +69,6 @@ class RecordsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def record_params
-    params.require(:record).permit(:user_id, :name, :amount)
+    params.require(:record).permit(:user_id, :name, :amount, :group_id)
   end
 end

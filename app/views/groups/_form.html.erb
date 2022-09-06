@@ -1,4 +1,4 @@
-<%= form_with(model: group) do |form| %>
+<%= form_with model: @group, url: user_groups_path, method: :post do |form| %>
   <% if group.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
@@ -12,11 +12,6 @@
   <% end %>
 
   <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.number_field :user_id %>
-  </div>
-
-  <div>
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
@@ -25,6 +20,12 @@
     <%= form.label :icon, style: "display: block" %>
     <%= form.text_field :icon %>
   </div>
+
+  <div>
+    <% form.label :user, style: "display: block" %>
+    <%= form.number_field :user_id, id: :group_user_id, value: current_user.id, type: :hidden %>
+  </div>
+
 
   <div>
     <%= form.submit %>

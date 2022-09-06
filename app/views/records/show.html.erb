@@ -3,8 +3,8 @@
 <%= render @record %>
 
 <div>
-  <%= link_to "Edit this record", edit_record_path(@record) %> |
-  <%= link_to "Back to records", records_path %>
+  <%= link_to "Edit this record", edit_user_record_path(@record) %> |
+  <%= link_to "Back to records", user_records_path %>
 
-  <%= button_to "Destroy this record", @record, method: :delete %>
+  <%= button_to "Destroy this record", user_record_path, method: :delete %>
 </div>

@@ -6,9 +6,9 @@
   <% @records.each do |record| %>
     <%= render record %>
     <p>
-      <%= link_to "Show this record", record %>
+      <%= link_to "Show this record",  user_record_path(current_user, record) %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New record", new_record_path %>
+<%= link_to "New record", new_user_record_path %>
