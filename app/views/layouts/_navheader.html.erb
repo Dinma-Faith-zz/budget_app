@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4"">
+<% if user_signed_in? %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4 ">
     <div class="container-fluid">
       <h2 class="navbar-brand" > BudgetApp </h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,3 +29,4 @@
             </div>
     </div>
 </nav>
+<% end %>

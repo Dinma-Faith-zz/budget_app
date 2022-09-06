@@ -1,15 +1,53 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+  
+.cont {
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  color: #fff;
+  background-image: linear-gradient(rgba(7, 7, 7, 0.75), rgba(12, 12, 12, 0.75)), url("https://img.freepik.com/premium-photo/falling-gold-coins-money-dark-background_26018-1711.jpg?w=740");
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cont-paragraph {
+  padding-inline: 8%;
+}
+
+.text {
+  color: #e1bee7;
+  font-family: 'Rubik Moonrocks', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.text-center {
+  text-shadow: 1px 1px 0px #201f1f;
+}
+
+.link-new a {
+  /* color: #434b54; */
+  color: #fff;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #5fb523;
+  padding: 5%;
+}

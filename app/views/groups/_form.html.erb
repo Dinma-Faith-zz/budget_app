@@ -11,23 +11,23 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="mx-5">
+    <% form.label :name, required: true, style: "display: block" %>
+    <%= form.text_field :name, class:"form-control", placeholder:"Name" %>
+  </div>
+
+  <br />
+  <div class="mx-5">
+    <% form.label :icon, required: true, style: "display: block" %>
+    <%= form.file_field :icon, direct_upload: true, class:"form-control", placeholder:"Icon" %>
   </div>
 
   <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
+    <% form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id, id: :group_user_id, class:"form-control", value: current_user.id, type: :hidden %>
   </div>
 
-  <div>
-    <% form.label :user, style: "display: block" %>
-    <%= form.number_field :user_id, id: :group_user_id, value: current_user.id, type: :hidden %>
-  </div>
-
-
-  <div>
-    <%= form.submit %>
+  <div id="btn"class="btn btn-primary btn-lg  mt-4 mx-5">
+    <%= form.submit class: 'bg-primary border border-0'%>
   </div>
 <% end %>
