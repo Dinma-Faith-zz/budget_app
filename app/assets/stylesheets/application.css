@@ -8,8 +8,14 @@
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
+  overflow: scroll;
 }
-  
+
+img {
+  width: 80%;
+  height: 50px;
+}
+
 .cont {
   background-size: contain;
   height: 100vh;
@@ -40,14 +46,38 @@ body {
   text-shadow: 1px 1px 0px #201f1f;
 }
 
+.link-new {
+  margin: 4%;
+}
+
 .link-new a {
-  /* color: #434b54; */
   color: #fff;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1030;
   background-color: #5fb523;
-  padding: 5%;
+  padding: 2% 30%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: baseline;
+  font-weight: 600;
+  color: #434b54;
+}
+
+.group_id,
+.record_id {
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-bottom: 4%;
+  margin-inline: 10%;
+}
+
+.welcome {
+  font-size: 100;
+  color: darkturquoise;
+  margin-bottom: 8%;
+  border-bottom: 1px solid;
 }

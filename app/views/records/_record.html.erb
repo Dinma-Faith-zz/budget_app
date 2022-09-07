@@ -1,17 +1,15 @@
-<div id="<%= dom_id record %>">
-  <p>
-    <strong>User:</strong>
-    <%= record.user_id %>
-  </p>
+<div class="group_id py-1" >
+  <div class="flex">
+    <p>
+      <%= record.name %>
+    </p>
 
-  <p>
-    <strong>Name:</strong>
-    <%= record.name %>
+    <p>
+      <%= record.amount %>
+    </p>
+  </div>
+  
+  <p class="my-3 text-center">
+    <%= link_to "Show this record",  user_record_path(current_user, record) %>
   </p>
-
-  <p>
-    <strong>Amount:</strong>
-    <%= record.amount %>
-  </p>
-
 </div>

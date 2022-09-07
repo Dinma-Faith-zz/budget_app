@@ -4,6 +4,7 @@ class GroupsController < ApplicationController
   # GET /groups or /groups.json
   def index
     @groups = Group.where(user_id: current_user.id)
+    @total_records = current_user.records.sum(:amount)
   end
 
   # GET /groups/1 or /groups/1.json
@@ -52,7 +53,7 @@ class GroupsController < ApplicationController
     @group.destroy
 
     respond_to do |format|
-      format.html { redirect_to  user_group_url, notice: 'Group was successfully destroyed.' }
+      format.html { redirect_to user_groups_url, notice: 'Group was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

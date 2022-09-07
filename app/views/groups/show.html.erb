@@ -2,8 +2,8 @@
 
 <%= render @group %>
 
-<div>
-  <%= link_to "Back to groups", user_groups_path %>
+  <%= button_to "Delete this group", user_group_path, method: :delete, class: "btn btn-danger m-5" %>
 
-  <%= button_to "Destroy this group", user_group_path, method: :delete %>
+<div class="link-new text-center">
+  <%= link_to "Back to groups", user_groups_path %>
 </div>

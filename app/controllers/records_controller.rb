@@ -12,7 +12,7 @@ class RecordsController < ApplicationController
   # GET /records/new
   def new
     @record = Record.new
-    @groups = current_user.groups.where(user_id: current_user.id).order(:name) 
+    @groups = current_user.groups.where(user_id: current_user.id).order(:name)
   end
 
   # GET /records/1/edit
@@ -21,7 +21,7 @@ class RecordsController < ApplicationController
   # POST /records or /records.json
   def create
     params = record_params
-    @record = Record.new(user: current_user, name: params[:name], amount: params[:amount]) 
+    @record = Record.new(user: current_user, name: params[:name], amount: params[:amount])
     # @record = Record.new(record_params)
 
     respond_to do |format|
@@ -55,7 +55,7 @@ class RecordsController < ApplicationController
     @record.destroy
 
     respond_to do |format|
-      format.html { redirect_to records_url, notice: 'Record was successfully destroyed.' }
+      format.html { redirect_to user_records_url, notice: 'Record was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
