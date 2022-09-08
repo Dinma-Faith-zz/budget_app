@@ -1,0 +1,23 @@
+<div class="group_id py-1">
+<div class="flex">
+  <p>
+   <%= group.amount %>
+  </p>
+  
+  <p>
+    <%= group.name %>
+  </p>
+
+  <div>
+    <%= image_tag group.icon %>
+  </div>
+</div>
+
+  <p class="my-3 text-center">
+    <%= link_to "Show this group", user_group_path(current_user, group) %> | |
+    <%= link_to "Add New record", new_user_record_path %>
+  </p>
+ 
+
+
+</div>
