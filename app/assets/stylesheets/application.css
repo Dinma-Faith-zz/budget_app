@@ -15,10 +15,12 @@ body {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
 }
+
 .text,
 .text1 {
   animation: 1s ease-out 0s 1 slideInLeft;
@@ -42,13 +44,10 @@ img {
   width: 100%;
   background-position: center;
   color: #fff;
-  background-image: linear-gradient(rgba(7, 7, 7, 0.75), rgba(12, 12, 12, 0.75)), url("https://img.freepik.com/premium-photo/falling-gold-coins-money-dark-background_26018-1711.jpg?w=740");
-}
-
-.cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient(rgba(7, 7, 7, 0.75), rgba(12, 12, 12, 0.75)), url("https://img.freepik.com/premium-photo/falling-gold-coins-money-dark-background_26018-1711.jpg?w=740");
 }
 
 .cont-paragraph {
@@ -56,7 +55,7 @@ img {
 }
 
 .text-center {
-  text-shadow: 1px 1px 0px #201f1f;
+  text-shadow: 1px 1px 0 #201f1f;
 }
 
 .link-new {
@@ -71,7 +70,6 @@ img {
 
 .flex {
   display: flex;
-  justify-content: space-around;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: baseline;
@@ -81,13 +79,13 @@ img {
 
 .group_id,
 .record_id {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
   margin-bottom: 4%;
   margin-inline: 10%;
 }
 
 .welcome {
-  font-size: 100;
+  font-size: large;
   color: darkturquoise;
   margin-bottom: 8%;
   border-bottom: 1px solid;
