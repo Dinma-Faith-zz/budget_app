@@ -22,7 +22,6 @@ class RecordsController < ApplicationController
   def create
     params = record_params
     @record = Record.new(user: current_user, name: params[:name], amount: params[:amount])
-    # @record = Record.new(record_params)
 
     respond_to do |format|
       if @record.save

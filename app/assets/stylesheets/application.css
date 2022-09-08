@@ -6,6 +6,26 @@
   margin: 0;
 }
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.text,
+.text1 {
+  animation: 1s ease-out 0s 1 slideInLeft;
+  font-family: 'Rubik Moonrocks', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.text {
+  color: #e1bee7;
+}
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
   overflow: scroll;
@@ -33,13 +53,6 @@ img {
 
 .cont-paragraph {
   padding-inline: 8%;
-}
-
-.text {
-  color: #e1bee7;
-  font-family: 'Rubik Moonrocks', sans-serif;
-  font-weight: 500;
-  font-size: 50px;
 }
 
 .text-center {
