@@ -10,7 +10,7 @@ The project requirements can be viewed [here](https://github.com/microverseinc/c
 
 ## Presentation
 
-[Click](https://dinmabudget.herokuapp.com/)
+[Click](https://www.loom.com/share/6e49719423784cb4971a1706bd42c46c)
 
 ## Built With
 
@@ -33,7 +33,7 @@ Open a browser and go to: `https://localhost:3000` to view the app.
 `cd budget-app`</br>
 run `rspec`
 
-## [Go Live](https://dinma-budget.herokuapp.com/)
+## [Go Live](https://dinmabudget.herokuapp.com/)
 
 N/A
 
