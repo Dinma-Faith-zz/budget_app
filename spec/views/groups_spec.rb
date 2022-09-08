@@ -14,6 +14,5 @@ RSpec.describe 'Hello world', type: :feature do
       visit user_groups_path(user, user.groups)
       expect(page).to have_content('You need to sign in or sign up before continuing')
     end
-
   end
 end

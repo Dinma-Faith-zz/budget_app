@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Hello world', type: :feature do
   describe 'index page' do
     let(:user) do
-      User.create!(name: 'Faith', email: 'faith@gmail.com', password: 123456)
+      User.create!(name: 'Faith', email: 'faith@gmail.com', password: 123_456)
     end
 
     let(:records) do

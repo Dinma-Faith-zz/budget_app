@@ -10,5 +10,4 @@ RSpec.feature 'Login', type: :feature do
     visit new_user_session_path
     expect(page).to have_current_path(new_user_session_path)
   end
-
 end
