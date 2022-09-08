@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow: scroll;
+}
+
 @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
@@ -24,11 +29,6 @@
 
 .text {
   color: #e1bee7;
-}
-
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-  overflow: scroll;
 }
 
 img {
@@ -81,8 +81,6 @@ img {
 
 .group_id,
 .record_id {
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   margin-bottom: 4%;
   margin-inline: 10%;

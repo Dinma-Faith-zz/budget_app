@@ -45,11 +45,16 @@ N/A
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/d2ndjim/budget-app/issues).
+Feel free to check the [issues page](https://github.com/d2ndjim/budget-app/issues)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+The design has been inspired by: [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+
 
 ## 📝 License
 
