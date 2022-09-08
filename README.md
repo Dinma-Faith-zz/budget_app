@@ -8,6 +8,10 @@ This application keeps track of a users transactions for different categories of
 
 The project requirements can be viewed [here](https://github.com/microverseinc/curriculum-rails/blob/main/capstone/rails_capstone.md)
 
+## Presentation
+
+[Click](https://dinma-budget.herokuapp.com/)
+
 ## Built With
 
 - Languages: Ruby
@@ -29,7 +33,7 @@ Open a browser and go to: `https://localhost:3000` to view the app.
 `cd budget-app`</br>
 run `rspec`
 
-## [Live demo]()
+## [Go Live](https://dinma-budget.herokuapp.com/)
 
 N/A
 
