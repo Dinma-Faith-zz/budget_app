@@ -10,7 +10,7 @@ The project requirements can be viewed [here](https://github.com/microverseinc/c
 
 ## Presentation
 
-[Click](https://dinma-budget.herokuapp.com/)
+[Click](https://www.loom.com/share/6e49719423784cb4971a1706bd42c46c)
 
 ## Built With
 
