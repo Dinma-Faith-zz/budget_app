@@ -33,7 +33,7 @@ Open a browser and go to: `https://localhost:3000` to view the app.
 `cd budget-app`</br>
 run `rspec`
 
-## [Go Live](https://dinma-budget.herokuapp.com/)
+## [Go Live](https://dinmabudget.herokuapp.com/)
 
 N/A
 
