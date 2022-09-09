@@ -62,4 +62,4 @@ The design has been inspired by: [Gregoire Vella on Behance](https://www.behance
 
 ## 📝 License
 
-This project is [MIT](./license.md) licensed.
+This project is [MIT](./MIT.md) licensed.

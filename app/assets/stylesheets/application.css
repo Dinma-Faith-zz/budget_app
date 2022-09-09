@@ -90,3 +90,8 @@ img {
   margin-bottom: 8%;
   border-bottom: 1px solid;
 }
+
+.rec_btn {
+  display: flex;
+  justify-content: space-around;
+}

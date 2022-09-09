@@ -10,5 +10,6 @@ RSpec.describe Record, type: :model do
       record = Record.create name: '', amount: 7.0, user_id: @user
       expect(record).to_not be_valid
     end
+
   end
 end
