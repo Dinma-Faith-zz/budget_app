@@ -22,7 +22,7 @@ The project requirements can be viewed [here](https://github.com/microverseinc/c
 ## Usage
 
 Run the following commands:</br>
-`git clone https://github.com/d2ndjim/budget-app.git`</br>
+`git clone https://github.com/Dinma-Faith/budget-app.git`</br>
 `cd budget-app`</br>
 `bundle install`</br>
 `rails s`</br>
@@ -49,7 +49,7 @@ N/A
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/d2ndjim/budget-app/issues)
+Feel free to check the [issues page](https://github.com/Dinma-Faith/budget-app/issues)
 
 ## Show your support
 
